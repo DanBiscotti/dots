@@ -1,0 +1,43 @@
+keymap o NULL
+keymap O NULL
+keymap j NULL
+keymap k NULL
+
+keymap j UP
+keymap k DOWN
+keymap SPC NULL
+keymap } NULL
+keymap { NULL
+
+keymap L NEXT
+keymap H PREV
+
+keymap o GOTO_LINK
+keymap O TAB_LINK
+
+keymap M-Q EXIT
+
+keymap ^TAB PREV_LINK
+keymap TAB NEXT_LINK
+
+keymap gg BEGIN
+keymap go GOTO
+keymap gh GOTO https://duckduckgo.com/lite
+keymap to TAB_GOTO
+keymap tt TAB_GOTO https://duckduckgo.com/lite
+keymap tq CLOSE_TAB
+keymap th TAB_LEFT
+keymap tl TAB_RIGHT
+keymap C-h PREV_TAB
+keymap C-l NEXT_TAB
+keymap tm TAB_MENU
+keymap td NEW_TAB
+
+keymap m NEXT_PAGE
+keymap M PREV_PAGE
+
+keymap x EXTERN
+keymap X EXTERN_LINK
+
+keymap ba ADD_BOOKMARK
+keymap bb VIEW_BOOKMARK
