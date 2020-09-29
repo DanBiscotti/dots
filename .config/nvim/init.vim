@@ -1,24 +1,25 @@
 " Plugins
 call plug#begin()
-Plug 'runoshun/tscompletejob'
-Plug 'prabirshrestha/asyncomplete-tscompletejob.vim'
-Plug 'yami-beta/asyncomplete-omni.vim'
-Plug 'prabirshrestha/asyncomplete.vim'
+Plug 'neovim/nvim-lsp'
+Plug 'neovim/nvim-lspconfig'
+Plug 'nvim-lua/completion-nvim'
+Plug 'nvim-lua/diagnostic-nvim'
 Plug 'sbdchd/neoformat'
+
 Plug 'easymotion/vim-easymotion'
-Plug 'OmniSharp/omnisharp-vim'
-Plug 'cespare/vim-toml'
+
 Plug 'preservim/nerdtree'
 Plug 'vimwiki/vimwiki'
+
 Plug 'mhinz/vim-signify'
 Plug 'tpope/vim-fugitive'
 Plug 'junegunn/gv.vim'
 Plug 'idanarye/vim-merginal'
+Plug 'tpope/vim-rhubarb'
+
 Plug 'morhetz/gruvbox'
 Plug 'ryanoasis/vim-devicons'
-Plug 'neovim/nvim-lsp'
 Plug 'ap/vim-css-color'
-Plug 'tpope/vim-rhubarb'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'sakhnik/nvim-gdb'
@@ -105,15 +106,25 @@ let g:gruvbox_italic=1
 colorscheme gruvbox
 highlight Normal ctermbg = black
 
-" tab completion
+" Use completion-nvim in every buffer
+autocmd BufEnter * lua require'completion'.on_attach()
+autocmd BufEnter * lua require'diagnostic'.on_attach()
+
+" Use <Tab> and <S-Tab> to navigate through popup menu
 inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-inoremap <expr> <cr>    pumvisible() ? "\<C-y>" : "\<cr>"
+
+" Set completeopt to have a better completion experience
+set completeopt=menuone,noinsert,noselect
+
+" Avoid showing message extra message when using completion
+set shortmess+=c
 
 let g:python3_host_prog='/usr/bin/python3.8'
 
-" Omnisharp
-let g:OmniSharp_highlighting = 0
+     
+let g:diagnostic_auto_popup_while_jump = 1
+let g:diagnostic_show_sign = 0
 
 " Autocmd
 autocmd FileType cs setlocal sw=4 ts=4 sts=4
@@ -123,8 +134,7 @@ autocmd BufWritePre *.js Neoformat prettier
 autocmd FileType typescript setlocal sw=2 ts=2 sts=2
 autocmd BufWritePre *.ts Neoformat prettier
 
-call asyncomplete#register_source(asyncomplete#sources#tscompletejob#get_source_options({
-    \ 'name': 'tscompletejob',
-    \ 'whitelist': ['typescript'],
-    \ 'completor': function('asyncomplete#sources#tscompletejob#completor'),
-    \ }))
+lua <<EOF
+require'nvim_lsp'.tsserver.setup{}
+require'nvim_lsp'.omnisharp.setup{}
+EOF
