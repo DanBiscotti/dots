@@ -1,5 +1,9 @@
 " Plugins
 call plug#begin()
+Plug 'runoshun/tscompletejob'
+Plug 'prabirshrestha/asyncomplete-tscompletejob.vim'
+Plug 'yami-beta/asyncomplete-omni.vim'
+Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'sbdchd/neoformat'
 Plug 'easymotion/vim-easymotion'
 Plug 'OmniSharp/omnisharp-vim'
@@ -12,10 +16,12 @@ Plug 'junegunn/gv.vim'
 Plug 'idanarye/vim-merginal'
 Plug 'morhetz/gruvbox'
 Plug 'ryanoasis/vim-devicons'
-Plug 'itchyny/lightline'
-Plug 'neoclide/coc.nvim'
+Plug 'neovim/nvim-lsp'
 Plug 'ap/vim-css-color'
 Plug 'tpope/vim-rhubarb'
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
+Plug 'sakhnik/nvim-gdb'
 call plug#end()
 
 set t_Co=256
@@ -25,6 +31,7 @@ set t_ZH=[3m
 let mapleader=' '
 
 " Settings
+set smartindent
 set nowrap
 set scrolloff=10
 set sidescrolloff=10
@@ -98,16 +105,10 @@ let g:gruvbox_italic=1
 colorscheme gruvbox
 highlight Normal ctermbg = black
 
-" coc tab completion
-function! s:check_back_space() abort
-  let col = col('.') - 1
-  return !col || getline('.')[col - 1]  =~ '\s'
-endfunction
-
-inoremap <silent><expr> <TAB>
-	  \ pumvisible() ? "\<C-n>" :
-	  \ <SID>check_back_space() ? "\<TAB>" :
-	  \ coc#refresh()
+" tab completion
+inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+inoremap <expr> <cr>    pumvisible() ? "\<C-y>" : "\<cr>"
 
 let g:python3_host_prog='/usr/bin/python3.8'
 
@@ -115,5 +116,15 @@ let g:python3_host_prog='/usr/bin/python3.8'
 let g:OmniSharp_highlighting = 0
 
 " Autocmd
-autocmd BufWritePre,TextChanged,InsertLeave *.js Neoformat
-autocmd BufWritePre,TextChanged,InsertLeave *.cs OmniSharpCodeFormat
+autocmd FileType cs setlocal sw=4 ts=4 sts=4
+autocmd BufWritePre *.cs OmniSharpCodeFormat
+autocmd FileType javascript setlocal sw=2 ts=2 sts=2
+autocmd BufWritePre *.js Neoformat prettier
+autocmd FileType typescript setlocal sw=2 ts=2 sts=2
+autocmd BufWritePre *.ts Neoformat prettier
+
+call asyncomplete#register_source(asyncomplete#sources#tscompletejob#get_source_options({
+    \ 'name': 'tscompletejob',
+    \ 'whitelist': ['typescript'],
+    \ 'completor': function('asyncomplete#sources#tscompletejob#completor'),
+    \ }))
