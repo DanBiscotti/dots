@@ -5,6 +5,7 @@ Plug 'neovim/nvim-lspconfig'
 Plug 'nvim-lua/completion-nvim'
 Plug 'nvim-lua/diagnostic-nvim'
 Plug 'sbdchd/neoformat'
+Plug 'OmniSharp/omnisharp-vim'
 
 Plug 'easymotion/vim-easymotion'
 
@@ -93,7 +94,7 @@ nnoremap <C-p> :Rg<CR>
 nnoremap <C-r> :%s/s/r/gc<Left><Left><Left><Left><Left><Left>
 
 " NERDTree
-nnoremap <C-n> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeToggle<CR>
 
 " Git
 nnoremap <C-v> :GV<CR>
@@ -123,6 +124,8 @@ set shortmess+=c
 let g:python3_host_prog='/usr/bin/python3.8'
 
      
+" Diagnostics
+nnoremap <C-n> :NextDiagnosticCycle<CR>
 let g:diagnostic_auto_popup_while_jump = 1
 let g:diagnostic_show_sign = 0
 
