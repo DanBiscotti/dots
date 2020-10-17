@@ -6,8 +6,10 @@ Plug 'nvim-lua/completion-nvim'
 Plug 'nvim-lua/diagnostic-nvim'
 Plug 'sbdchd/neoformat'
 Plug 'OmniSharp/omnisharp-vim'
+"Plug 'mattn/emmet-vim' research more first
 
 Plug 'easymotion/vim-easymotion'
+Plug 'tmsvg/pear-tree'
 
 Plug 'preservim/nerdtree'
 Plug 'vimwiki/vimwiki'
@@ -21,6 +23,7 @@ Plug 'tpope/vim-rhubarb'
 Plug 'morhetz/gruvbox'
 Plug 'ryanoasis/vim-devicons'
 Plug 'ap/vim-css-color'
+
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'sakhnik/nvim-gdb'
@@ -37,6 +40,9 @@ set smartindent
 set nowrap
 set scrolloff=10
 set sidescrolloff=10
+set list
+set listchars=tab:>-,trail:~,extends:>,precedes:<
+set number relativenumber
 
 " Unmap
 nnoremap q <nop>
@@ -73,6 +79,14 @@ vnoremap H zh
 vnoremap L zl
 vnoremap J <C-e>
 vnoremap K <C-y>
+
+" Newline normal mode
+nnoremap <silent> <CR> :<C-u>call append(line("."),   repeat([""], v:count1))<CR>
+nnoremap <silent> <BS> :<C-u>call append(line(".")-1, repeat([""], v:count1))<CR>
+
+" Moving lines in visual mode
+vnoremap <C-j> :m '>+1<CR>gv=gv
+vnoremap <C-k> :m '<-2<CR>gv=gv
 
 " Moving in insert mode
 inoremap <C-h> <Left>
@@ -130,10 +144,13 @@ let g:diagnostic_auto_popup_while_jump = 1
 let g:diagnostic_show_sign = 0
 
 " Autocmd
-autocmd FileType cs setlocal sw=4 ts=4 sts=4
-autocmd BufWritePre *.cs OmniSharpCodeFormat
+autocmd FileType cs setlocal sw=4 ts=4 sts=4 expandtab
+"autocmd BufWritePre *.cs OmniSharpCodeFormat
+autocmd BufEnter,BufNew *.cshtml setlocal sw=2 ts=2 sts=2 filetype=html expandtab
 autocmd FileType javascript setlocal sw=2 ts=2 sts=2
 autocmd BufWritePre *.js Neoformat prettier
+autocmd FileType json setlocal sw=2 ts=2 sts=2
+autocmd BufWritePre *.json Neoformat prettier
 autocmd FileType typescript setlocal sw=2 ts=2 sts=2
 autocmd BufWritePre *.ts Neoformat prettier
 

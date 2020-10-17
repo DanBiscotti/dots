@@ -64,6 +64,6 @@ bindkey -v
 
 source /home/dan/repos/zsh-z/zsh-z.plugin.zsh
 
-PATH=$PATH:/home/dan/.gem/ruby/2.7.0/bin:/home/dan/go/bin/
+export PATH="$PATH:/home/dan/.gem/ruby/2.7.0/bin:/home/dan/go/bin/:/home/dan/.dotnet/tools"
 
 source /home/dan/.config/broot/launcher/bash/br
