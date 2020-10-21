@@ -1,6 +1,7 @@
+let $VIMUSERRUNTIME = fnamemodify($MYVIMRC, ':p:h')
 " Auto install plug if not already
-if empty(glob('~/.vim/autoload/plug.vim'))
-  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+if empty(glob($VIMUSERRUNTIME+'/autoload/plug.vim'))
+  silent !curl -fLo $VIMUSERRUNTIME/autoload/plug.vim --create-dirs
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
@@ -59,8 +60,8 @@ set number relativenumber
 nnoremap q <nop>
 
 " Editing vimrc
-nnoremap <Leader>ev :vsplit ~/.vimrc<CR>
-nnoremap <Leader>sv :source ~/.vimrc<CR>
+nnoremap <Leader>ev :vsplit $MYVIMRC<CR>
+nnoremap <Leader>sv :source $MYVIMRC<CR>
 
 " Quitting and saving
 nnoremap <C-w> :w<CR>
