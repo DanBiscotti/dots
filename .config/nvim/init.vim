@@ -7,10 +7,14 @@ endif
 
 " Plugins
 call plug#begin()
-Plug 'neovim/nvim-lsp'
-Plug 'neovim/nvim-lspconfig'
-Plug 'nvim-lua/completion-nvim'
-Plug 'nvim-lua/diagnostic-nvim'
+
+if has('nvim-0.5')
+    Plug 'neovim/nvim-lsp'
+    Plug 'neovim/nvim-lspconfig'
+    Plug 'nvim-lua/completion-nvim'
+    Plug 'nvim-lua/diagnostic-nvim'
+endif
+
 Plug 'sbdchd/neoformat'
 Plug 'OmniSharp/omnisharp-vim'
 "Plug 'mattn/emmet-vim' research more first
@@ -128,19 +132,21 @@ let g:gruvbox_italic=1
 colorscheme gruvbox
 highlight Normal ctermbg = black
 
-" Use completion-nvim in every buffer
-autocmd BufEnter * lua require'completion'.on_attach()
-autocmd BufEnter * lua require'diagnostic'.on_attach()
+if has('nvim-0.5')
+    " Use completion-nvim in every buffer
+    autocmd BufEnter * lua require'completion'.on_attach()
+    autocmd BufEnter * lua require'diagnostic'.on_attach()
 
-" Use <Tab> and <S-Tab> to navigate through popup menu
-inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
-inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+    " Use <Tab> and <S-Tab> to navigate through popup menu
+    inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
+    inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
-" Set completeopt to have a better completion experience
-set completeopt=menuone,noinsert,noselect
+    " Set completeopt to have a better completion experience
+    set completeopt=menuone,noinsert,noselect
 
-" Avoid showing message extra message when using completion
-set shortmess+=c
+    " Avoid showing message extra message when using completion
+    set shortmess+=c
+endif
 
 let g:python3_host_prog='/usr/bin/python3.8'
 
@@ -151,17 +157,26 @@ let g:diagnostic_auto_popup_while_jump = 1
 let g:diagnostic_show_sign = 0
 
 " Autocmd
+autocmd FileType vim setlocal sw=4 ts=4 sts=4 expandtab
 autocmd FileType cs setlocal sw=4 ts=4 sts=4 expandtab
 "autocmd BufWritePre *.cs OmniSharpCodeFormat
 autocmd BufEnter,BufNew *.cshtml setlocal sw=2 ts=2 sts=2 filetype=html expandtab
 autocmd FileType javascript setlocal sw=2 ts=2 sts=2
 autocmd BufWritePre *.js Neoformat prettier
+autocmd FileType html setlocal sw=2 ts=2 sts=2 expandtab
+autocmd BufWritePre *.html Neoformat prettier
 autocmd FileType json setlocal sw=2 ts=2 sts=2
 autocmd BufWritePre *.json Neoformat prettier
 autocmd FileType typescript setlocal sw=2 ts=2 sts=2
 autocmd BufWritePre *.ts Neoformat prettier
 
+function! SetupLanguageServers()
 lua <<EOF
 require'nvim_lsp'.tsserver.setup{}
 require'nvim_lsp'.omnisharp.setup{}
 EOF
+endfunction
+
+if has('nvim-0.5')
+    call SetupLanguageServers()
+endif
