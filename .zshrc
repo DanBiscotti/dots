@@ -4,6 +4,8 @@ ZSH_THEME="theunraveler"
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
+export TERM=screen-256color
+
 # Autocomplete
 autoload -U compinit
 zstyle ':completion:*' menu select
@@ -61,6 +63,9 @@ bindkey -v
 #	# Antigen plugin manager
 #	source ~/.config/zsh/antigen.zsh
 #	antigen bundle zsh-users/zsh-syntax-highlighting
+
+# remap caps lock to ctrl
+sudo loadkeys /usr/share/keymaps/Caps2Ctrl.map
 
 source /home/dan/repos/zsh-z/zsh-z.plugin.zsh
 
