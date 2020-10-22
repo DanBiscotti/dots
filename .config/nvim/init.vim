@@ -67,6 +67,9 @@ nnoremap <Leader>sv :source $MYVIMRC<CR>
 nnoremap <C-w> :w<CR>
 nnoremap <C-q> :conf q<CR>
 
+" Redo
+nnoremap U <C-r>
+
 " Navigating panes
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
@@ -156,6 +159,8 @@ let g:python3_host_prog='/usr/bin/python3.8'
 nnoremap <C-n> :NextDiagnosticCycle<CR>
 let g:diagnostic_auto_popup_while_jump = 1
 let g:diagnostic_show_sign = 0
+
+let g:neoformat_only_msg_on_error = 1
 
 " Autocmd
 autocmd FileType vim setlocal sw=4 ts=4 sts=4 expandtab
