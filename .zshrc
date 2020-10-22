@@ -4,7 +4,7 @@ ZSH_THEME="theunraveler"
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
-export TERM=screen-256color
+#export TERM=screen-256color # causing issues in tmux
 
 # Autocomplete
 autoload -U compinit
