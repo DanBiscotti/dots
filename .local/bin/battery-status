@@ -1,0 +1,7 @@
+if [ -f "/sys/class/power_supply/BAT0/status" ]; then
+    BATTERY_FOLDER="/sys/class/power_supply/BAT0"
+fi
+if [ -f "/sys/class/power_supply/cw2015-battery/status" ]; then
+    BATTERY_FOLDER="/sys/class/power_supply/cw2015-battery"
+fi
+cat $BATTERY_FOLDER/status | xargs -I % zsh -c "[[ % == \"Charging\" ]] && printf '\u2191' || printf '\u2665'"
