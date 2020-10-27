@@ -64,10 +64,7 @@ bindkey -v
 #	source ~/.config/zsh/antigen.zsh
 #	antigen bundle zsh-users/zsh-syntax-highlighting
 
-# remap caps lock to ctrl
-sudo loadkeys /usr/share/keymaps/Caps2Ctrl.map
-
-source /home/dan/repos/zsh-z/zsh-z.plugin.zsh
+#source /home/dan/repos/zsh-z/zsh-z.plugin.zsh
 
 export PATH="$PATH:/home/dan/.gem/ruby/2.7.0/bin:/home/dan/go/bin/:/home/dan/.dotnet/tools"
 

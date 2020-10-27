@@ -167,10 +167,12 @@ autocmd FileType vim setlocal sw=4 ts=4 sts=4 expandtab
 autocmd FileType cs setlocal sw=4 ts=4 sts=4 expandtab
 "autocmd BufWritePre *.cs OmniSharpCodeFormat
 autocmd BufEnter,BufNew *.cshtml setlocal sw=2 ts=2 sts=2 filetype=html expandtab
-autocmd FileType javascript setlocal sw=2 ts=2 sts=2
+autocmd FileType javascript setlocal sw=2 ts=2 sts=2 expandtab
 autocmd BufWritePre *.js Neoformat prettier
 autocmd FileType html setlocal sw=2 ts=2 sts=2 expandtab
 autocmd BufWritePre *.html Neoformat prettier
+autocmd FileType css setlocal sw=2 ts=2 sts=2 expandtab
+autocmd BufWritePre *.css Neoformat prettier
 autocmd FileType json setlocal sw=2 ts=2 sts=2
 autocmd BufWritePre *.json Neoformat prettier
 autocmd FileType typescript setlocal sw=2 ts=2 sts=2
