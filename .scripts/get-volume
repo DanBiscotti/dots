@@ -1,0 +1,2 @@
+#!/bin/bash
+amixer sget Master | tail -1 | cut -f 6 -d ' '

@@ -1,4 +1,4 @@
 #!/bin/bash
 if [ -d /sys/class/backlight/edp-backlight ]; then
-    echo $(($(cat /sys/class/backlight/edp-backlight/brightness)+100)) > /sys/class/backlight/edp-backlight/brightness
+    [ $(cat /sys/class/backlight/edp-backlight/brightness) -lt 4000 ] && echo $(($(cat /sys/class/backlight/edp-backlight/brightness)+100)) > /sys/class/backlight/edp-backlight/brightness || tmux display-message "Max brightness reached!"
 fi
