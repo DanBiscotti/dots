@@ -1,1 +1,0 @@
-tmux new-window "w3m $(cat ~/.cache/reading-bookmarks/$(ls ~/.cache/reading-bookmarks | sed 's/%20/ /g' | grep -v ^current$ | fzf | sed 's/ /%20/g' ))"

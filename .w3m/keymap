@@ -15,7 +15,7 @@ keymap H PREV
 keymap o GOTO_LINK
 keymap O TAB_LINK
 
-keymap M-Q EXIT
+keymap C-q QUIT
 
 keymap ^TAB PREV_LINK
 keymap TAB NEXT_LINK

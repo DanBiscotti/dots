@@ -1,0 +1,4 @@
+#!/bin/bash
+if [ -d /sys/class/backlight/edp-backlight ]; then
+    echo $(($(cat /sys/class/backlight/edp-backlight/brightness)+100)) > /sys/class/backlight/edp-backlight/brightness
+fi

@@ -37,7 +37,7 @@ label_topline 0
 nextpage_topline 0
 color 1
 basic_color terminal
-anchor_color blue
+anchor_color yellow
 image_color green
 form_color red
 mark_color cyan

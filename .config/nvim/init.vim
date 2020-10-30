@@ -175,8 +175,10 @@ autocmd FileType css setlocal sw=2 ts=2 sts=2 expandtab
 autocmd BufWritePre *.css Neoformat prettier
 autocmd FileType json setlocal sw=2 ts=2 sts=2
 autocmd BufWritePre *.json Neoformat prettier
-autocmd FileType typescript setlocal sw=2 ts=2 sts=2
+autocmd FileType typescript setlocal sw=2 ts=2 sts=2 expandtab
 autocmd BufWritePre *.ts Neoformat prettier
+autocmd FileType sh setlocal sw=4 ts=4 sts=4 expandtab
+autocmd FileType zsh setlocal sw=4 ts=4 sts=4 expandtab
 
 function! SetupLanguageServers()
 lua <<EOF
