@@ -1,1 +1,1 @@
-cat ~/.config/tmux/tmux-launcher.conf | grep $(cut -f 1 -d ':' ~/.config/tmux/tmux-launcher.conf | fzf) | cut -f 2- -d ':' > ~/.cache/launcher-command && $(cat ~/.cache/launcher-command)
+cat ~/.config/tmux/tmux-launcher.conf | grep $(cut -f 1 -d ':' ~/.config/tmux/tmux-launcher.conf | fzf) | cut -f 2- -d ':' | $SHELL
