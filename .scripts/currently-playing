@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# A script which will use mpd (via mpc) to get the currently playing track
+# If the name is longer than WINDOWSIZE then it will scroll the name accross
+# TIMEBUFFER is how long in seconds it will stay before scrolling
+# WHITESPACEBUFFER is the number of spaces between the end of the name and the beginning of the name as it scrolls back around
+# This script was made for tmux status bar
+
+mpc &>/dev/null || exit 0
+CURRENTLYPLAYING="$(mpc | head -1)"
+CURRENTLYPLAYINGLENGTH=$(expr length "$CURRENTLYPLAYING")
+WINDOWSIZE=30
+IFS='%'
+if [ $CURRENTLYPLAYINGLENGTH -gt $WINDOWSIZE ]; then
+    TIMEBUFFER=30
+    WHITESPACEBUFFER=5
+    CURRENTLYPLAYINGBUFFERED="$CURRENTLYPLAYING""$(printf %${WHITESPACEBUFFER}s)"
+    CURRENTLYPLAYINGLENGTH=$(expr length $CURRENTLYPLAYINGBUFFERED)
+    CURRENTLYPLAYINGINDEX=$(($(date +%s) % ($CURRENTLYPLAYINGLENGTH+$TIMEBUFFER)-$TIMEBUFFER))
+    CURRENTLYPLAYINGINDEXZERO=$(($CURRENTLYPLAYINGINDEX > 1 ? $CURRENTLYPLAYINGINDEX : 1))
+    echo "$(printf '\u266A') $(printf $CURRENTLYPLAYINGBUFFERED | cut -c $CURRENTLYPLAYINGINDEXZERO-$CURRENTLYPLAYINGLENGTH)$(printf $CURRENTLYPLAYINGBUFFERED | cut -c 1-$CURRENTLYPLAYINGINDEXZERO)" | cut -c 1-$WINDOWSIZE
+else
+    echo "$(printf '\u266A') $CURRENTLYPLAYING"
+fi
+unset IFS
