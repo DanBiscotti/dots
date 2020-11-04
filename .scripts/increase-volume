@@ -1,0 +1,2 @@
+#!/bin/bash
+amixer sset Master $(($(amixer sget Master | tail -1 | cut -f 6 -d ' ')+($(amixer sget Master | grep Limits | cut -f 2 -d '-')/20))) &>/dev/null && tmux refresh-client -S
