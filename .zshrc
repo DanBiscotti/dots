@@ -1,5 +1,12 @@
 PROMPT="%F{yellow}[%~]%F{purple} "
 
+autoload -U colors && colors	# Load colors
+
+# History in cache directory:
+HISTSIZE=10000
+SAVEHIST=10000
+HISTFILE=~/.cache/zsh/history
+
 # Autocomplete
 autoload -U compinit
 zstyle ':completion:*' menu select
@@ -9,6 +16,14 @@ _comp_options+=(globdots)
 
 export KEYTIMEOUT=1
 bindkey -v
+
+# Use vim keys in tab complete menu:
+bindkey -M menuselect 'h' vi-backward-char
+bindkey -M menuselect 'k' vi-up-line-or-history
+bindkey -M menuselect 'l' vi-forward-char
+bindkey -M menuselect 'j' vi-down-line-or-history
+bindkey -v '^?' backward-delete-char
+
 # Cursor in vi mode
 function zle-keymap-select {
     if [[ ${KEYMAP} == vicmd ]] ||

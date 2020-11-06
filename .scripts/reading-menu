@@ -1,1 +1,1 @@
-tmux new-window "w3m $(cat ~/.cache/continue-marks/$(ls ~/.cache/continue-marks | sed 's/%20/ /g' | grep -v ^current$ | fzf | sed 's/ /%20/g' ))"
+selection="$(cat ~/.cache/continue-marks/$(ls ~/.cache/continue-marks | sed 's/%20/ /g' | grep -v ^current$ | fzf | sed 's/ /%20/g' ))" && [[ selection ]] && tmux new-window "w3m $selection"
