@@ -7,6 +7,9 @@
 # This script was made for tmux status bar
 
 mpc &>/dev/null || exit 0
+if [[ $(mpc | wc -l) -lt 3 ]]; then
+    exit 0
+fi
 CURRENTLYPLAYING="$(mpc | head -1)"
 CURRENTLYPLAYINGLENGTH=$(expr length "$CURRENTLYPLAYING")
 WINDOWSIZE=30

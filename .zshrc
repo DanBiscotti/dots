@@ -64,15 +64,14 @@ if type rg &> /dev/null; then
 fi
 
 
-export KEYTIMEOUT=1
-bindkey -v
-
-#	# Antigen plugin manager
-#	source ~/.config/zsh/antigen.zsh
-#	antigen bundle zsh-users/zsh-syntax-highlighting
-
-#source /home/dan/repos/zsh-z/zsh-z.plugin.zsh
 
 export PATH="$PATH:/home/dan/.gem/ruby/2.7.0/bin:/home/dan/go/bin/:/home/dan/.dotnet/tools"
 
 source /home/dan/.config/broot/launcher/bash/br
+
+# TMUX
+if which tmux >/dev/null 2>&1; then
+    if [[ -z  "$TMUX" ]]; then
+        xset -q &>/dev/null && tmux -2 || fbpad tmux -2
+    fi
+fi

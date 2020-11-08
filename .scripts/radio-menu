@@ -1,0 +1,2 @@
+MENUFILE="/home/dan/.config/mpd/radio-menu"
+selection=$(grep "$(cat $MENUFILE | cut -f 1 -d ':' | fzf)" $MENUFILE | cut -f 2- -d ':') && [ $selection ] && mpc load $selection && mpc play && mpc next

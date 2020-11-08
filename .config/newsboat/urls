@@ -1,10 +1,13 @@
 "query:Unread Articles:unread = \"yes\""
+# Blogs
 https://christine.website/blog.rss
-https://api.quantamagazine.org/feed
-https://blog.cleancoder.com/atom.xml
 https://lukesmith.xyz/rss.xml
-https://vitalyparnas.com/feeds/all.rss.xml
-https://www.youtube.com/feeds/videos.xml?channel_id=UCVls1GmFKf6WlTraIb_IaJg
 https://www.pine64.org/feed/
 https://blog.acolyer.org/feed/
+
+# Youtube
+https://www.youtube.com/feeds/videos.xml?channel_id=UCVls1GmFKf6WlTraIb_IaJg
+
+# Podcasts
+https://podcasts.files.bbci.co.uk/p07h19zz.rss
 https://feeds.fireside.fm/selfhosted/rss

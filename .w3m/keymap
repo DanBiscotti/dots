@@ -41,3 +41,4 @@ keymap X EXTERN_LINK
 
 keymap ba ADD_BOOKMARK
 keymap bb VIEW_BOOKMARK
+keymap C-y HISTORY

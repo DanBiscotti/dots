@@ -1,2 +1,2 @@
-MENUFILE=/home/dan/.config/tmux/tmux-menu
+MENUFILE="/home/dan/.config/mpd/music-menu"
 cat $MENUFILE | grep $(cut -f 1 -d ':' $MENUFILE | fzf) | cut -f 2- -d ':' | $SHELL
