@@ -1,0 +1,6 @@
+#!/bin/zsh
+if [[ $(tmux show -g status) == "status on" ]]; then
+    tmux set -g status off
+else
+    tmux set -g status on
+fi

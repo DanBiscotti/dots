@@ -57,6 +57,7 @@ alias la=ls -a
 export HTTP_HOME="www.duckduckgo.com/lite"
 export EDITOR=nvim
 export BROWSER=w3m
+export XDG_CONFIG_HOME=/home/dan/.config
 
 if type rg &> /dev/null; then
     export FZF_DEFAULT_COMMAND='rg --files'

@@ -1,2 +1,3 @@
 Play/Pause:/home/dan/.scripts/playpause-music
+Stop:mpc stop
 Radio:/home/dan/.scripts/radio-menu
