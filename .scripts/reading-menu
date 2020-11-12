@@ -1,6 +1,6 @@
 #!/bin/zsh
 BOOKMARKFOLDER="/home/dan/.cache/bookmarks"
-selection="$(cat $(echo $BOOKMARKFOLDER/$(ls $BOOKMARKFOLDER | sed 's/%20/ /g' | grep -v ^current$ | fzf | sed 's/ /%20/g' ) | read bookmark && echo $bookmark))" && [[ selection ]] && 
+selection="$(cat $(echo $BOOKMARKFOLDER/$(ls $BOOKMARKFOLDER | sed 's/%20/ /g' | grep -v ^current$ | fzf | sed 's/ /%20/g' )))" && [[ selection ]] &&
     if [[ $(echo $selection | cut -c 1-8) == "file:///" ]]; then
         tmux new-window "w3m $selection"
     else
