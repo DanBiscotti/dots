@@ -45,18 +45,20 @@ zle -N zle-line-init
 echo -ne '\e[5 q'
 preexec() { echo -ne '\e[5 q' ;}
 
-# Aliases/Functons
-alias vim=nvim
-download-website() { wget --recursive --no-clobber --page-requisites --html-extension --convert-links --restrict-file-names=windows --domains $(echo $1 | awk -F/ '{print $3}') --no-parent $1 }
-alias ls=lsd
-alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-alias la=ls -a
-
 # Env vars
 export HTTP_HOME="www.duckduckgo.com/lite"
 export EDITOR=nvim
 export BROWSER=w3m
+export BOOKMARK_DIR=/home/dan/.cache/bookmarks
 export XDG_CONFIG_HOME=/home/dan/.config
+
+# Aliases/Functons
+alias vim=nvim
+download-website() { wget --recursive --no-clobber --page-requisites --html-extension --convert-links --restrict-file-names=windows --domains $(echo $1 | awk -F/ '{print $3}') --no-parent $1 }
+bk-add-pdf() { printf "Name: " && read unformatted && echo $unformatted | sed 's/ /%20/g' | read formatted && echo "$(pwd)/$1 0" > $BOOKMARK_DIR/$formatted }
+alias ls=lsd
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias la=ls -a
 
 if type rg &> /dev/null; then
     export FZF_DEFAULT_COMMAND='rg --files'

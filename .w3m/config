@@ -78,7 +78,7 @@ urimethodmap ~/.w3m/urimethodmap, /usr/etc/w3m/urimethodmap
 editor /usr/bin/vi
 mailto_options 1
 mailer /usr/bin/mail
-extbrowser url=%s && echo $url | awk -F/ '{print $7}' | ( read name ; echo "$url" > ~/.cache/continue-marks/"$name" && echo $name > ~/.cache/continue-marks/.current )
+extbrowser url=%s && echo $url | awk -F/ '{print $7}' | ( read name ; echo "$url" > ~/.cache/bookmarks/"$name" )
 extbrowser2 mpv --vo=drm %s
 extbrowser3 printf 'Enter video name: ' && read -r filename && echo "$filename" > ~/.cache/youtube-vids/.current && youtube-dl -f best -o ~/.cache/youtube-vids/"$filename".mp4 %s 
 extbrowser4 
