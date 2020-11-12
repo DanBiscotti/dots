@@ -1,1 +1,9 @@
-selection="$(cat ~/.cache/continue-marks/$(ls ~/.cache/continue-marks | sed 's/%20/ /g' | grep -v ^current$ | fzf | sed 's/ /%20/g' ))" && [[ selection ]] && tmux new-window "w3m $selection"
+#!/bin/zsh
+BOOKMARKFOLDER="/home/dan/.cache/bookmarks"
+selection="$(cat $(echo $BOOKMARKFOLDER/$(ls $BOOKMARKFOLDER | sed 's/%20/ /g' | grep -v ^current$ | fzf | sed 's/ /%20/g' ) | read bookmark && echo $bookmark))" && [[ selection ]] && 
+    if [[ $(echo $selection | cut -c 1-8) == "file:///" ]]; then
+        tmux new-window "w3m $selection"
+    else
+        # if PDF
+        tmux new-window "tmux set -g status off && /home/dan/repos/JFBView/build/src/jfbview --color_mode=invert -p $(echo $selection | cut -f 2 -d ' ') $(echo $selection | cut -f 1 -d ' ') && tmux set -g status on"
+    fi

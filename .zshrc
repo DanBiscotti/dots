@@ -9,7 +9,6 @@ HISTFILE=~/.cache/zsh/history
 
 # Autocomplete
 autoload -U compinit
-zstyle ':completion:*' menu select
 zmodload zsh/complist
 compinit
 _comp_options+=(globdots)
@@ -76,3 +75,6 @@ if which tmux >/dev/null 2>&1; then
         xset -q &>/dev/null && tmux -2 || fbpad tmux -2
     fi
 fi
+
+source /home/dan/.config/zsh/zsh-z.plugin.zsh
+zstyle ':completion:*' menu select
