@@ -1,6 +1,6 @@
 let $VIMUSERRUNTIME = fnamemodify($MYVIMRC, ':p:h')
 " Auto install plug if not already
-if empty(glob($VIMUSERRUNTIME+'/autoload/plug.vim'))
+if empty(glob($VIMUSERRUNTIME . '/autoload/plug.vim'))
   silent !curl -fLo $VIMUSERRUNTIME/autoload/plug.vim --create-dirs
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
@@ -76,9 +76,6 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
-" Toggle highlighted search
-nnoremap <C-s> :set nohls!<CR>
-
 " Beginning/end of line
 nnoremap { 0
 nnoremap } $
@@ -126,7 +123,7 @@ nnoremap <C-r> :%s/s/r/gc<Left><Left><Left><Left><Left><Left>
 nnoremap <C-f> :NERDTreeToggle<CR>
 
 " Git
-nnoremap <C-v> :GV<CR>
+nnoremap <Leader>gl :GV<CR>
 nnoremap <Leader>gs :Gstatus<CR>
 nnoremap <C-b> :MerginalToggle<CR>
 set updatetime=100 " git gutter
@@ -179,6 +176,7 @@ autocmd FileType typescript setlocal sw=2 ts=2 sts=2 expandtab
 autocmd BufWritePre *.ts Neoformat prettier
 autocmd FileType sh setlocal sw=4 ts=4 sts=4 expandtab
 autocmd FileType zsh setlocal sw=4 ts=4 sts=4 expandtab
+autocmd FileType vim setlocal sw=2 ts=2 sts=2 expandtab
 
 function! SetupLanguageServers()
 lua <<EOF
