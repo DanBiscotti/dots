@@ -119,6 +119,9 @@ nnoremap <C-p> :Rg<CR>
 " Search and replace
 nnoremap <C-r> :%s/s/r/gc<Left><Left><Left><Left><Left><Left>
 
+" Highlighting
+nnoremap <Leader>/ :set nohls!<CR>
+
 " NERDTree
 nnoremap <C-f> :NERDTreeToggle<CR>
 

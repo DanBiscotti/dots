@@ -7,7 +7,13 @@
 # This script was made for tmux status bar
 
 mpc &>/dev/null || exit 0
+if [[ $(mpc | head -2 | tail -1 | cut -f 1 -d ' ') == '[paused]' ]]; then
+    printf '\uF8E3 '
+else
+    printf '\u266A '
+fi
 if [[ $(mpc | wc -l) -lt 3 ]]; then
+    echo "-"
     exit 0
 fi
 CURRENTLYPLAYING="$(mpc | head -1)"
@@ -21,8 +27,8 @@ if [ $CURRENTLYPLAYINGLENGTH -gt $WINDOWSIZE ]; then
     CURRENTLYPLAYINGLENGTH=$(expr length $CURRENTLYPLAYINGBUFFERED)
     CURRENTLYPLAYINGINDEX=$(($(date +%s) % ($CURRENTLYPLAYINGLENGTH+$TIMEBUFFER)-$TIMEBUFFER))
     CURRENTLYPLAYINGINDEXZERO=$(($CURRENTLYPLAYINGINDEX > 1 ? $CURRENTLYPLAYINGINDEX : 1))
-    echo "$(printf '\u266A') $(printf $CURRENTLYPLAYINGBUFFERED | cut -c $CURRENTLYPLAYINGINDEXZERO-$CURRENTLYPLAYINGLENGTH)$(printf $CURRENTLYPLAYINGBUFFERED | cut -c 1-$CURRENTLYPLAYINGINDEXZERO)" | cut -c 1-$WINDOWSIZE
+    echo "$(printf $CURRENTLYPLAYINGBUFFERED | cut -c $CURRENTLYPLAYINGINDEXZERO-$CURRENTLYPLAYINGLENGTH)$(printf $CURRENTLYPLAYINGBUFFERED | cut -c 1-$CURRENTLYPLAYINGINDEXZERO)" | cut -c 1-$WINDOWSIZE
 else
-    echo "$(printf '\u266A') $CURRENTLYPLAYING"
+    echo "$CURRENTLYPLAYING"
 fi
 unset IFS
