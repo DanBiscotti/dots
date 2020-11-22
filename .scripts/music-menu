@@ -1,2 +1,3 @@
+#!/bin/zsh
 MENUFILE="/home/dan/.config/mpd/music-menu"
-cat $MENUFILE | grep $(cut -f 1 -d ':' $MENUFILE | fzf) | cut -f 2- -d ':' | $SHELL
+cat $MENUFILE | grep $(cut -f 1 -d ':' $MENUFILE | fzf) | cut -f 2- -d ':' | $SHELL && tmux refresh-client

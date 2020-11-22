@@ -1,0 +1,1 @@
+tmux set display-time 5000 && tmux display-message $1 && tmux set display-time 1000

@@ -1,0 +1,4 @@
+#!/bin/zsh
+FILENAME="$(date -Iseconds | cut -f 1 -d '+').ogg"
+RECORDINGS_DIR=/home/dan/.cache/recordings
+pacat --record -d alsa_output.platform-es8316-sound.stereo-fallback.monitor | sox -t raw -r 44100 -L -e signed-integer -S -b 16 -c 2 - "$RECORDINGS_DIR/$FILENAME"

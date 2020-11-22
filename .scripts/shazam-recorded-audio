@@ -1,0 +1,4 @@
+#!/bin/zsh
+RECORDINGS_DIR=/home/dan/.cache/recordings
+SHAZAM_FILE=/home/dan/.shazams
+songrec audio-file-to-recognized-song $RECORDINGS_DIR/$(ls $RECORDINGS_DIR | fzf --tac) | jq -r '.track.subtitle + " - " + .track.title' | read title && [ $title != "-" ] && echo $title > $SHAZAM_FILE && tmux set -g status-interval 5 && tmux display-message "$title" && tmux set -g status-interval 1

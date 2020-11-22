@@ -120,13 +120,13 @@ nnoremap <C-p> :Rg<CR>
 nnoremap <C-r> :%s/s/r/gc<Left><Left><Left><Left><Left><Left>
 
 " Highlighting
-nnoremap <Leader>/ :set nohls!<CR>
+nnoremap <Leader>\ :set nohls!<CR>
 
 " NERDTree
 nnoremap <C-f> :NERDTreeToggle<CR>
 
 " Git
-nnoremap <Leader>gl :GV<CR>
+nnoremap <C-c> :GV<CR>
 nnoremap <Leader>gs :Gstatus<CR>
 nnoremap <C-b> :MerginalToggle<CR>
 set updatetime=100 " git gutter

@@ -1,0 +1,7 @@
+#!/bin/bash
+mpc &>/dev/null || exit 0
+if [[ $(mpc | head -2 | tail -1 | cut -f 1 -d ' ') == '[playing]' ]]; then
+    mpc --quiet pause
+else
+    mpc --quiet play
+fi

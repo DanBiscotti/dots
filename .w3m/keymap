@@ -39,6 +39,8 @@ keymap M PREV_PAGE
 keymap x EXTERN
 keymap X EXTERN_LINK
 
+keymap i COMMAND "SET_OPTION display_image=toggle ; RELOAD"
+
 keymap ba ADD_BOOKMARK
 keymap bb VIEW_BOOKMARK
 keymap C-y HISTORY

@@ -5,7 +5,7 @@ bookmark=$(ls $BOOKMARKFOLDER | sed 's/%20/ /g' | grep -v ^current$ | fzf | sed 
 selection="$(cat $BOOKMARKFOLDER/$bookmark)" && [[ selection ]] &&
     if [[ $(echo $selection | cut -c 1-8) == "file:///" ]]; then
         tmux new-window "w3m $selection"
-    else
+    elif [[ $(echo $selection | cut -f 2 -d '.') == "pdf" ]]; then
         # if PDF
         tmux new-window "tmux set -g status off && jfbview --save_to_bookmark --color_mode=invert -p $(cat $PDFBOOKMARKFILE | grep $(echo $selection | cut -f 1 -d ' ') | tail -1 | cut -f 2 -d ' ') $(echo $selection | cut -f 1 -d ' ') && tmux set -g status on"
     fi

@@ -50,12 +50,13 @@ export HTTP_HOME="www.duckduckgo.com/lite"
 export EDITOR=nvim
 export BROWSER=w3m
 export BOOKMARK_DIR=/home/dan/.cache/bookmarks
+export PDFBOOKMARKFILE=/home/dan/.cache/pdf-bookmarks
 export XDG_CONFIG_HOME=/home/dan/.config
 
 # Aliases/Functons
 alias vim=nvim
 download-website() { wget --recursive --no-clobber --page-requisites --html-extension --convert-links --restrict-file-names=windows --domains $(echo $1 | awk -F/ '{print $3}') --no-parent $1 }
-bk-add-pdf() { printf "Name: " && read unformatted && echo $unformatted | sed 's/ /%20/g' | read formatted && echo "$(pwd)/$1 0" > $BOOKMARK_DIR/$formatted }
+bk-add-pdf() { printf "Name: " && read unformatted && echo $unformatted | sed 's/ /%20/g' | read formatted && echo "$(pwd)/$1" > $BOOKMARK_DIR/$formatted && echo "$(pwd)/$1 0" >> $PDFBOOKMARKFILE }
 alias ls=lsd
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias la=ls -a
