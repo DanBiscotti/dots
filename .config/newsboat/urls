@@ -1,13 +1,29 @@
 "query:Unread Articles:unread = \"yes\""
-# Blogs
-https://christine.website/blog.rss
-https://lukesmith.xyz/rss.xml
-https://www.pine64.org/feed/
-https://blog.acolyer.org/feed/
 
-# Youtube
+=======DOTNET=============
+https://tooslowexception.com/feed/
+https://devblogs.microsoft.com/dotnet/category/performance/feed
+https://devblogs.microsoft.com/dotnet/category/c/feed
+https://devblogs.microsoft.com/dotnet/category/asp-net/feed
+https://www.stevejgordon.co.uk/feed
+https://scottbrady91.com/rss.xml
+https://mattwarren.org/atom.xml
+
+=======ARCHITECTURE=======
+https://martinfowler.com/feed.atom
+
+=======LINUX==============
+https://christine.website/blog.rss
+https://www.pine64.org/feed/
+https://linmob.net/feed.xml
+
+=======OTHER==============
+https://blog.acolyer.org/feed/
+https://lukesmith.xyz/rss.xml
+
+=======YOUTUBE============
 https://www.youtube.com/feeds/videos.xml?channel_id=UCVls1GmFKf6WlTraIb_IaJg
 
-# Podcasts
+=======PODCASTS===========
 https://podcasts.files.bbci.co.uk/p07h19zz.rss
-https://feeds.fireside.fm/selfhosted/rss
+#https://feeds.fireside.fm/selfhosted/rss

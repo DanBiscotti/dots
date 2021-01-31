@@ -70,6 +70,10 @@ nnoremap <C-q> :conf q<CR>
 " Redo
 nnoremap U <C-r>
 
+" Splitting window
+nnoremap <C-s> :vsplit 
+nnoremap <C-i> :split 
+
 " Navigating panes
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
@@ -120,7 +124,7 @@ nnoremap <C-p> :Rg<CR>
 nnoremap <C-r> :%s/s/r/gc<Left><Left><Left><Left><Left><Left>
 
 " Highlighting
-nnoremap <Leader>\ :set nohls!<CR>
+nnoremap \ :set nohls!<CR>
 
 " NERDTree
 nnoremap <C-f> :NERDTreeToggle<CR>
@@ -180,6 +184,8 @@ autocmd BufWritePre *.ts Neoformat prettier
 autocmd FileType sh setlocal sw=4 ts=4 sts=4 expandtab
 autocmd FileType zsh setlocal sw=4 ts=4 sts=4 expandtab
 autocmd FileType vim setlocal sw=2 ts=2 sts=2 expandtab
+autocmd FileType cpp setlocal sw=2 ts=2 sts=2 expandtab
+autocmd FileType yaml setlocal sw=2 ts=2 sts=2 expandtab
 
 function! SetupLanguageServers()
 lua <<EOF

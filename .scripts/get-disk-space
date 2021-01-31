@@ -1,0 +1,2 @@
+#!/bin/zsh
+echo "\ue706 $(df -h | awk '/mmcblk2p2/ { print $3"/"$2 }')"

@@ -1,0 +1,2 @@
+#!/bin/zsh
+echo "\uf00c $(task count)"
