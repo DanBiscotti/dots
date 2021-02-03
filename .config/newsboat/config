@@ -45,12 +45,14 @@ highlight article ":.*\\(embedded flash\\)$" magenta default
 
 bind-key u toggle-article-read
 
-podcast-auto-enqueue yes
 color listnormal cyan default
 browser "w3m %u"
 macro y set browser "mpv %u"; open-in-browser ; set browser "w3m %u"
 
 # Podboat items
-download-path "~/Downloads/%h/%n"
+podcast-auto-enqueue yes
+download-path "~/media/podcasts/%n"
+download-filename-format "%F %t.%e"
+podlist-format "%b"
 max-downloads 3
-player "mpd"
+player "mpc clear && mpc add %u && mpc play"
