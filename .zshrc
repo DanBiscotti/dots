@@ -16,6 +16,9 @@ _comp_options+=(globdots)
 export KEYTIMEOUT=1
 bindkey -v
 
+bindkey -v '^K' up-line-or-history
+bindkey -v '^J' down-line-or-history
+
 # Use vim keys in tab complete menu:
 bindkey -M menuselect 'h' vi-backward-char
 bindkey -M menuselect 'k' vi-up-line-or-history

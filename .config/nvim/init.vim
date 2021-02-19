@@ -166,6 +166,9 @@ let g:diagnostic_show_sign = 0
 
 let g:neoformat_only_msg_on_error = 1
 
+" defaults
+set ts=2 sts=2 sw=2 expandtab
+
 " Autocmd
 autocmd FileType vim setlocal sw=4 ts=4 sts=4 expandtab
 autocmd FileType cs setlocal sw=4 ts=4 sts=4 expandtab

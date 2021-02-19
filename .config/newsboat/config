@@ -17,7 +17,7 @@ bind-key ^Q hard-quit
 # solarized
 color listnormal cyan default
 color listfocus black yellow standout bold
-color listnormal_unread blue default
+color listnormal_unread white default
 color listfocus_unread yellow default bold
 color info red black bold
 color article white default bold
@@ -45,7 +45,8 @@ highlight article ":.*\\(embedded flash\\)$" magenta default
 
 bind-key u toggle-article-read
 
-color listnormal cyan default
+datetime-format "%L"
+
 browser "w3m %u"
 macro y set browser "mpv %u"; open-in-browser ; set browser "w3m %u"
 
