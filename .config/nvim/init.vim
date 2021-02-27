@@ -18,6 +18,7 @@ endif
 
 Plug 'sbdchd/neoformat'
 Plug 'OmniSharp/omnisharp-vim'
+Plug 'rust-lang/rust.vim'
 "Plug 'mattn/emmet-vim' research more first
 
 Plug 'easymotion/vim-easymotion'
