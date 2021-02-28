@@ -53,7 +53,8 @@ macro y set browser "mpv %u"; open-in-browser ; set browser "w3m %u"
 # Podboat items
 podcast-auto-enqueue yes
 download-path "~/media/podcasts/%n"
-download-filename-format "%F %t.%e"
-podlist-format "%b"
+download-filename-format "%n-%t.%e"
+delete-played-files yes
+podlist-format "[%d/%t] (%p) %S %b"
 max-downloads 3
-player "mpc clear && mpc add %u && mpc play"
+player "mpc clear && echo <FILE> | cut -f 5- -d '/' | mpc add && mpc play"

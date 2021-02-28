@@ -1,4 +1,5 @@
-"query:Unread Articles:unread = \"yes\""
+"query:News:tags # \"news\" and unread =\"yes\""
+"query:Podcasts:tags # \"podcasts\" and unread = \"yes\""
 
 =======DOTNET=============
 https://tooslowexception.com/feed/ blog dotnet
@@ -22,7 +23,6 @@ https://linmob.net/feed.xml blog
 
 =======NEWS===============
 http://feeds.bbci.co.uk/news/world/rss.xml news
-https://www.aljazeera.com/xml/rss/all.xml news
 https://www.globalissues.org/news/feed news
 
 =======OTHER==============
@@ -86,7 +86,8 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCnkp4xDOwqqJD7sSM3xdUiQ you
 https://www.youtube.com/feeds/videos.xml?channel_id=UCAaQgfEkcQQ0vxM0dIZLnFg youtube interesting "YouTube: Architecture Foundation"
 
 =======PODCASTS===========
-https://podcasts.files.bbci.co.uk/p07h19zz.rss
-https://www.pine64.org/feed/mp3/
+https://podcasts.files.bbci.co.uk/p07h19zz.rss podcasts "Americast"
+https://www.pine64.org/feed/mp3/ podcasts "PineTalk"
+https://www.omnycontent.com/d/playlist/aaea4e69-af51-495e-afc9-a9760146922b/9b63d479-4382-4198-8e63-aac7013964ff/e5ebd302-9d49-4c56-a234-aac701396502/podcast.rss podcasts "Timesuck"
 
 #https://feeds.fireside.fm/selfhosted/rss
