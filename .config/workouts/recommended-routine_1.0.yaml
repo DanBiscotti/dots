@@ -1,0 +1,190 @@
+---
+sections:
+  - name: "Warm Up"
+    stages:
+      - name: "Shoulder stretch"
+        type: warm-up
+        optional: false
+
+      - name: "Squat sky reaches"
+        type: warm-up
+        optional: false
+
+      - name: "Wrist prep"
+        type: warm-up
+        optional: false
+
+      - name: "Deadbugs"
+        type: warm-up
+        optional: false
+
+      - name: "Arch hangs 1min"
+        type: warm-up
+        optional: true
+        optionalMessage: "add these after you reach negative pull-ups"
+
+      - name: "Support hold"
+        type: warm-up
+        optional: true
+        optionalMessage: "add these after you reach negative dips"
+
+      - name: "Easier squat progression"
+        type: warm-up
+        optional: true
+        optionalMessage: "add these after you reach bulgarian split squats"
+
+      - name: "Easier hinge progression"
+        type: warm-up
+        optional: true
+        optionalMessage: "add these after you reach banded nordic curls"
+
+  - name: "Strength Work"
+    stages:
+      - name: "First pair"
+        type: exercise-groups
+        sets: 3
+        restTime: 90
+        exerciseGroups:
+          - name: "Pull ups"
+            type: progression
+            exercises:
+              - name: "Scapular pull ups"
+                type: reps
+
+              - name: "Arch hangs"
+                type: timed
+                maxTime: 60
+
+              - name: "Negative pull ups"
+                type: reps
+
+              - name: "Pull ups"
+                type: reps
+
+              - name: "Weighted pull ups"
+                type: reps
+
+          - name: "Squats"
+            type: progression
+            exercises:
+              - name: "Assisted squats"
+                type: reps
+
+              - name: "Squats"
+                type: reps
+
+              - name: "Bulgarian split squats"
+                type: reps
+
+              - name: "Intermediate split squats"
+                type: reps
+
+              - name: "Advanced shrimp squats"
+                type: reps
+
+      - name: "Second pair"
+        type: exercise-groups
+        sets: 3
+        restTime: 90
+        exerciseGroups:
+          - name: "Dips"
+            type: progression
+            exercises:
+              - name: "Parallel bar support hold (up to 1 min)"
+                type: timed
+                maxTime: 60
+
+              - name: "Negative dips"
+                type: reps
+
+              - name: "Parallel bar dips"
+                type: reps
+
+              - name: "Weighted dips"
+                type: reps
+
+          - name: "Hinges"
+            type: progression
+            exercises:
+              - name: "Romanian deadlift"
+                type: reps
+
+              - name: "Single legged deadlift"
+                type: reps
+
+              - name: "Banded nordic curl negatives"
+                type: reps
+
+              - name: "Banded nordic curls"
+                type: reps
+
+              - name: "Nordic curls"
+                type: reps
+
+      - name: "Third pair"
+        type: exercise-groups
+        sets: 3
+        restTime: 90
+        exerciseGroups:
+          - name: "Push ups"
+            type: progression
+            exercises:
+              - name: "Vertical push-up"
+                type: reps
+
+              - name: "Incline push-up"
+                type: reps
+
+              - name: "Full push-up"
+                type: reps
+
+              - name: "Diamond push-up"
+                type: reps
+
+              - name: "Pseudo planche push-up"
+                type: reps
+
+          - name: "Rows"
+            type: progression
+            exercises:
+              - name: "Vertical rows"
+                type: reps
+
+              - name: "Incline rows"
+                type: reps
+                additionalParams: 
+                  - "Height from ground"
+
+              - name: "Horizontal rows"
+                type: reps
+
+              - name: "Wide rows"
+                type: reps
+
+              - name: "Weighted inverted rows"
+                type: reps
+
+  - name: "Core work"
+    stages:
+      - name: "Core triplet"
+        type: exercise-groups
+        sets: 3
+        restTime: 60
+        exerciseGroups:
+          - name: "Anti-extension"
+            type: single-exercise
+            exercises:
+              - name: "Ring ab rollouts"
+                type: reps
+
+          - name: "Anti-rotation"
+            type: single-exercise
+            exercises:
+              - name: "Banded Pallof press"
+                type: reps
+
+          - name: "Extension"
+            type: single-exercise
+            exercises:
+              - name: "Reverse hyperextension"
+                type: reps
