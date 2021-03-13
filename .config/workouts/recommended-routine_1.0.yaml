@@ -1,4 +1,12 @@
 ---
+checklist:
+  - "no meetings"
+  - "tote bag with tins is thread through the door"
+  - "bar is fixed to door with rings attached"
+  - "parallel bars are setup in living room"
+  - "tape measure is handy"
+  - "bedroom floor is cleared"
+  - "laptop is charged/charging"
 sections:
   - name: "Warm Up"
     stages:
@@ -137,6 +145,8 @@ sections:
 
               - name: "Full push-up"
                 type: reps
+                additionalParams:
+                  - "Distance between thumbs"
 
               - name: "Diamond push-up"
                 type: reps
@@ -152,7 +162,7 @@ sections:
 
               - name: "Incline rows"
                 type: reps
-                additionalParams: 
+                additionalParams:
                   - "Height from ground"
 
               - name: "Horizontal rows"
