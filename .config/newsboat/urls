@@ -86,6 +86,7 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCLB7AzTwc6VFZrBsO2ucBMg you
 https://www.youtube.com/feeds/videos.xml?channel_id=UCYVU6rModlGxvJbszCclGGw youtube linux "YouTube: Rob Braxman"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCnkp4xDOwqqJD7sSM3xdUiQ youtube music "YouTube: Adam Neely"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCAaQgfEkcQQ0vxM0dIZLnFg youtube interesting "YouTube: Architecture Foundation"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCajVmULQfRbhE55_9ftxDaw youtube music "YouTube: Keeno"
 
 =======PODCASTS===========
 https://podcasts.files.bbci.co.uk/p07h19zz.rss podcasts "Americast"
@@ -118,3 +119,5 @@ https://feeds.buzzsprout.com/1097978.rss podcasts coding "The Sourcegraph Podcas
 #https://vault.lunduke.com/LundukeShowMP3.xml podcasts linux "The Lunduke Show"
 https://www.martyrmade.com/feed/podcast/ podcasts history "Martyrmade"
 https://lhspodcast.info/category/podcast-mp3/feed podcasts linux "The Linux Ham Shack"
+https://feeds.buzzsprout.com/280493.rss podcasts linux "Embedded Insider"
+https://podcasts.files.bbci.co.uk/p089sfrz.rss podcasts interesting "Grounded with Louis Theroux"

@@ -2,11 +2,13 @@
 checklist:
   - "no meetings"
   - "tote bag with tins is thread through the door"
+  - "rings are on pull up bar"
   - "bar is fixed to door with rings attached"
   - "parallel bars are setup in living room"
   - "tape measure is handy"
   - "bedroom floor is cleared"
   - "laptop is charged/charging"
+  - "shorts are donned"
 sections:
   - name: "Warm Up"
     stages:
@@ -83,6 +85,8 @@ sections:
 
               - name: "Bulgarian split squats"
                 type: reps
+                additionalParams:
+                  - "Distance above floor"
 
               - name: "Intermediate split squats"
                 type: reps

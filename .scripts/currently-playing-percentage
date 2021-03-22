@@ -1,0 +1,2 @@
+PERCENTAGE="$(mpc | tail -2 | head -1 | cut -f 2 -d '(' | cut -f 1 -d ')')"
+[[ $PERCENTAGE == '0%' || $PERCENTAGE != *"%"* ]] || printf " %s" $PERCENTAGE

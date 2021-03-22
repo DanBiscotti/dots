@@ -1,0 +1,6 @@
+index=$(bluetoothctl info | grep Connected: | grep -n yes | cut -f 1 -d ':') 
+if [ -z $index ]; then
+  echo -
+else
+  bluetoothctl info | grep Alias: | awk -v i=$index 'NR == i' | cut -f 2 -d ':' | sed -e 's/^[ \t]*//'
+fi
