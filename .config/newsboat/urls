@@ -1,5 +1,5 @@
-"query:News:tags # \"news\" and unread =\"yes\""
-"query:Podcasts:tags # \"podcasts\" and unread = \"yes\""
+"query:Dotnet:tags # \"dotnet\" and unread = \"yes\""
+"query:Podcasts:tags # \"podcast\" and unread = \"yes\""
 "query:Youtube:tags # \"youtube\" and unread = \"yes\""
 "query:Linux:tags # \"linux\" and unread = \"yes\""
 

@@ -104,10 +104,13 @@ exercise() {
     local name=$(echo "$1" | yq -r '.name')
     local type=$(echo "$1" | yq -r '.type')
     local num_of_additional_params=$(echo "$1" | yq '.additionalParams | length')
+    local result=""
 
     bold "Current exercise: $name"
     if [ $type == "reps" ]; then
-        result="$(input "reps completed: ")"
+        while ! [[ "$result" =~ ^[0-9]+$ ]]; do
+            local result="$(input "reps completed: ")"
+        done
     elif [ $type == "timed" ]; then
         local max=$(echo $1 | yq -r '.maxTime')
         blah=$(echo "continue" | smenu)

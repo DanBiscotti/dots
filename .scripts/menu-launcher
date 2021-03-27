@@ -1,0 +1,2 @@
+#!/bin/zsh
+cat $1 | grep $(cut -f 1 -d ':' $1 | fzf) | cut -f 2- -d ':' | $SHELL && tmux refresh-client

@@ -4,3 +4,4 @@ Radio:/home/dan/.scripts/radio-menu
 Podcasts:tmux new-window podboat
 Record:/home/dan/.scripts/record-audio-output
 Shazam:/home/dan/.scripts/shazam-recorded-audio
+Sleep Timer:/home/dan/.scripts/sleep-timer

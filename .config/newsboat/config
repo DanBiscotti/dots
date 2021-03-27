@@ -7,6 +7,7 @@ bind-key K next-feed articlelist
 bind-key G end
 bind-key g home
 bind-key l open
+bind-key s show-urls
 bind-key h quit
 bind-key n next-unread
 bind-key N prev-unread

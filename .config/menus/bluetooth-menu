@@ -1,0 +1,1 @@
+Earbuds:bluetoothctl power on && bluetoothctl connect 00:1F:F0:1B:BD:19 || bluetoothctl connect 00:1F:F0:1B:B2:00

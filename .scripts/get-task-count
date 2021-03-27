@@ -1,2 +1,2 @@
 #!/bin/zsh
-echo "\uf00c $(task count)"
+echo "\uf00c $(task status:pending count)"

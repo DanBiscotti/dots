@@ -1,2 +1,0 @@
-MENUFILE=/home/dan/.config/tmux/tmux-menu
-cat $MENUFILE | grep $(cut -f 1 -d ':' $MENUFILE | fzf) | cut -f 2- -d ':' | $SHELL
