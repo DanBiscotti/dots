@@ -4,19 +4,22 @@
 "query:Linux:tags # \"linux\" and unread = \"yes\""
 
 =======DOTNET=============
-https://tooslowexception.com/feed/ blog dotnet
-https://devblogs.microsoft.com/dotnet/category/performance/feed blog dotnet
-https://devblogs.microsoft.com/dotnet/category/c/feed blog dotnet
-https://devblogs.microsoft.com/dotnet/category/asp-net/feed blog dotnet
-https://www.stevejgordon.co.uk/feed blog dotnet
-https://scottbrady91.com/rss.xml blog dotnet
-https://mattwarren.org/atom.xml blog dotnet
-https://visualstudiomagazine.com/rss-feeds/practical-net.aspx blog dotnet
-https://visualstudiomagazine.com/rss-feeds/open-source-net.aspx blog dotnet
-https://visualstudiomagazine.com/rss-feeds/news.aspx blog dotnet
+https://tooslowexception.com/feed/ blog dotnet software
+https://devblogs.microsoft.com/dotnet/category/performance/feed blog dotnet software
+https://devblogs.microsoft.com/dotnet/category/c/feed blog dotnet software
+https://devblogs.microsoft.com/dotnet/category/asp-net/feed blog dotnet software
+https://www.stevejgordon.co.uk/feed blog dotnet software
+https://scottbrady91.com/rss.xml blog dotnet software
+https://mattwarren.org/atom.xml blog dotnet software
+https://visualstudiomagazine.com/rss-feeds/practical-net.aspx blog dotnet software
+https://visualstudiomagazine.com/rss-feeds/open-source-net.aspx blog dotnet software
+https://visualstudiomagazine.com/rss-feeds/news.aspx blog dotnet software
+https://hnrss.org/newest?q=asp.net dotnet software
+https://www.reddit.com/r/dotnet/top/.rss?sort=top&t=week
+https://leveluppp.ghost.io/rss/ blog dotnet software
 
 =======ARCHITECTURE=======
-https://martinfowler.com/feed.atom blog
+https://martinfowler.com/feed.atom blog software
 
 =======LINUX==============
 https://christine.website/blog.rss blog
@@ -35,6 +38,7 @@ https://www.globalissues.org/news/feed news
 =======OTHER==============
 https://blog.acolyer.org/feed/ blog
 https://lukesmith.xyz/rss.xml blog
+https://en.wikipedia.org/w/api.php?action=featuredfeed&feed=featured&feedformat=atom
 
 =======YOUTUBE============
 https://www.youtube.com/feeds/videos.xml?channel_id=UCVls1GmFKf6WlTraIb_IaJg youtube linux "YouTube: Distrotube"
@@ -92,6 +96,8 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCYVU6rModlGxvJbszCclGGw you
 https://www.youtube.com/feeds/videos.xml?channel_id=UCnkp4xDOwqqJD7sSM3xdUiQ youtube music "YouTube: Adam Neely"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCAaQgfEkcQQ0vxM0dIZLnFg youtube interesting "YouTube: Architecture Foundation"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCajVmULQfRbhE55_9ftxDaw youtube music "YouTube: Keeno"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCw6BnEkURLprFGx_il2OyUw youtube music "YouTube: LevelUp"
+
 
 =======PODCASTS===========
 https://podcasts.files.bbci.co.uk/p07h19zz.rss podcasts "Americast"
