@@ -1,0 +1,16 @@
+definitions:
+  - name: "Scapular pull ups"
+    type: int
+
+  - name: "Arch hangs"
+    type: timed-seconds
+    maxTime: 60
+
+  - name: "Negative pull ups"
+    type: int
+
+  - name: "Pull ups"
+    type: int
+
+  - name: "Weighted pull ups"
+    type: int

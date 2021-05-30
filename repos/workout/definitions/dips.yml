@@ -1,0 +1,18 @@
+---
+definitions:
+  - id: support-hold
+    name: "Parallel bar support hold (up to 1 min)"
+    type: timed-seconds
+    max: 60
+
+  - id: negative-dips
+    name: "Negative dips"
+    type: int
+
+  - id: parallel-bar-dips
+    name: "Parallel bar dips"
+    type: int
+
+  - id: weighted-dips
+    name: "Weighted dips"
+    type: int

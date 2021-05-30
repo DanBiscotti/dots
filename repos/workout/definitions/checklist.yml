@@ -1,0 +1,49 @@
+---
+definitions:
+  - id: no-meetings
+    message: "No meetings?"
+    type: confirm
+
+  - id: rings-on-bar
+    message: "Rings are on the pull-up bar?"
+    type: confirm
+
+  - id: bar-on-door
+    message: "Pull-up bar is on the door?"
+    type: confirm
+
+  - id: bars-in-living-room
+    message: "Parallel bars are in the living room?"
+    type: confirm
+
+  - id: tape-measure-handy
+    message: "Tape measure is handy?"
+    type: confirm
+
+  - id: plank-handy
+    message: "Plank is handy?"
+    type: confirm
+
+  - id: floor-mat-handy
+    message: "Floormat is handy?"
+    type: confirm
+
+  - id: belt-handy
+    message: "Belt is handy?"
+    type: confirm
+
+  - id: bedroom-floor-clean
+    message: "Bedroom floor is clean?"
+    type: confirm
+
+  - id: laptop-charging
+    message: "Laptop is charging?"
+    type: confirm
+
+  - id: shorts-on
+    message: "Shorts are on?"
+    type: confirm
+
+  - id: music-on
+    message: "Music is on?"
+    type: confirm

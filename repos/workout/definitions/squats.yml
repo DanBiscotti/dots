@@ -1,0 +1,18 @@
+---
+definitions:
+  - name: "Assisted squats"
+    type: int
+
+  - name: "Squats"
+    type: int
+
+  - name: "Bulgarian split squats"
+    type: int
+    additional-data:
+      - "Distance above floor"
+
+  - name: "Intermediate split squats"
+    type: int
+
+  - name: "Advanced shrimp squats"
+    type: int

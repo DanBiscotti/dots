@@ -1,0 +1,21 @@
+---
+defintions:
+  - id: romanian-deadlift
+    name: "Romanian deadlift"
+    type: int
+
+  - id: single-legged-deadlift
+    name: "Single legged deadlift"
+    type: int
+
+  - id: banded-nordic-curl-negatives
+    name: "Banded nordic curl negatives"
+    type: int
+
+  - id: banded-nordic-curls
+    name: "Banded nordic curls"
+    type: int
+
+  - id: nordic-curls
+    name: "Nordic curls"
+    type: int

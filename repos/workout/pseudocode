@@ -1,0 +1,34 @@
+get todays date
+display menu of workouts, user selects workout
+workout config is loaded
+gets last workout of this type
+notes workout begin time
+goes through checklist
+
+foreach section
+  foreach stage
+    if stage has options, choose options
+
+    if exercise has groups
+      foreach group
+        cycle through each group for n sets
+    else
+
+sections
+  stages
+    cycle-sets
+
+section
+cycle sets
+
+workout
+piano
+diary
+reading
+
+checklist
+sections
+stages
+prompts
+date
+timed

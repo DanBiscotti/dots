@@ -1,0 +1,13 @@
+---
+definitions:
+  - id: ring-ab-rollouts
+    name: "Ring ab rollouts"
+    type: int
+
+  - id: banded-ballof-press
+    name: "Banded Pallof press"
+    type: int
+
+  - id: reverse-hyperextension
+    name: "Reverse hyperextension"
+    type: int
