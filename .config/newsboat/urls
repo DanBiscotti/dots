@@ -2,6 +2,7 @@
 "query:Podcasts:tags # \"podcast\" and unread = \"yes\""
 "query:Youtube:tags # \"youtube\" and unread = \"yes\""
 "query:Linux:tags # \"linux\" and unread = \"yes\""
+"query:Crypto:tags # \"crypto\" and unread = \"yes\""
 
 =======DOTNET=============
 https://tooslowexception.com/feed/ blog dotnet software
@@ -127,7 +128,9 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCo-3ThNQmPmQSQL_L6Lx1_w you
 https://www.youtube.com/feeds/videos.xml?channel_id=UCYUZ0gWRp_HQCVEz0OovuAg youtube crime "YouTube: Matt Orchard - Crime and Society"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCYwVxWpjeKFWwu8TML-Te9A youtube crime "YouTube: JCS - Criminal Psychology"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCM-Imt636hk4nHrXKwxR7XA youtube comedy music "YouTube: Jazz Emu"
-
+https://www.youtube.com/feeds/videos.xml?channel_id=UClgJyzwGs-GyaNxUHcLZrkg youtube crypto "Youtube: InvestAnswers"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCqK_GSMbpiV8spgD3ZGloSw youtube crypto "Youtube: Coin Bureau"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCi7egjf0JDHuhznWugXq4hA youtube crypto "Youtube: Bitcoin for Beginners"
 
 =======PODCASTS===========
 https://podcasts.files.bbci.co.uk/p07h19zz.rss podcasts "Americast"
