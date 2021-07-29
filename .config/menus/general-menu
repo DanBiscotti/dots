@@ -1,11 +1,9 @@
-Web:tmux new-window "w3m"
-News:tmux new-window "newsboat"
-Mail:tmux new-window "neomutt"
-Todos:tmux new-window "vit"
+Web:tmux new-window -t 0: "w3m"
+News:tmux new-window -t 0: "newsboat"
+Mail:tmux new-window -t 0: "neomutt"
+Todos:tmux new-window -t 0: "vit"
 Reading:/home/dan/.scripts/reading-menu
-Diary:tmux new-window "tpl new diary"
-Workout:tmux new-window "/home/dan/.scripts/wkout.sh"
 Bluetooth:/home/dan/.scripts/menu-launcher ~/.config/menus/bluetooth-menu
-Calendar:tmux new-window "calcurse"
-Youtube:tmux new-window "ytfzf"
-Pi:tmux new-window "ssh dan@192.168.1.46"
+Calendar:tmux new-window -t 0: "calcurse"
+Youtube:tmux new-window -t 0: "ytfzf"
+SSH:tmux new-window -t 0: "ssh dan@192.168.1.46"

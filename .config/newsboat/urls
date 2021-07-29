@@ -16,9 +16,6 @@ https://visualstudiomagazine.com/rss-feeds/news.aspx blog dotnet software
 https://hnrss.org/newest?q=asp.net dotnet software
 https://www.reddit.com/r/dotnet/top/.rss?sort=top&t=week
 https://leveluppp.ghost.io/rss/ blog dotnet software
-https://mshibanami.github.io/GitHubTrendingRSS/weekly/c%23.xml dotnet software
-https://mshibanami.github.io/GitHubTrendingRSS/daily/c%23.xml dotnet software
-https://mshibanami.github.io/GitHubTrendingRSS/monthly/c%23.xml dotnet software
 https://feed.infoq.com/c_sharp/news/ dotnet software
 http://feeds.feedburner.com/TroyHunt?format=xml dotnet software
 http://feeds.hanselman.com/ScottHanselman dotnet software
@@ -68,66 +65,85 @@ https://lukesmith.xyz/rss.xml blog
 https://en.wikipedia.org/w/api.php?action=featuredfeed&feed=featured&feedformat=atom
 
 =======YOUTUBE============
-https://www.youtube.com/feeds/videos.xml?channel_id=UCVls1GmFKf6WlTraIb_IaJg youtube linux "YouTube: Distrotube"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCYO_jab_esuFRV4b17AJtAw youtube maths "YouTube: 3Blue1Brown" 
-https://www.youtube.com/feeds/videos.xml?channel_id=UC4PIiYewI1YGyiZvgNlJNrA youtube music "YouTube: Charles Cornell"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCcoDpbA4c9HQY0AjKHSlKLg youtube music comedy "YouTube: Cer Spence"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCfhSB16X9MXhzSFe_H7XbHg youtube linux "YouTube: Bryan Jenks"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCld68syR8Wi-GY_n4CaoJGA youtube linux "YouTube: Brodie Robertson"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCq6aw03lNILzV96UvEAASfQ youtube music comedy "YouTube: Bill Wurtz"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCxDZs_ltFFvn0FDHT6kmoXA youtube vlog "YouTube: Bald and Bankrupt"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCtqxG9IrHFU_ID1khGvx9sA youtube comedy "YouTube: All Gas No Brakes"
 https://www.youtube.com/feeds/videos.xml?channel_id=UC3RKA4vunFAfrfxiJhPEplw youtube coding "YouTube: CodeOpinion"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCGc8ZVCsrR3dAuhvUbkbToQ youtube interesting "YouTube: City Beautiful"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCJYVW4HVrMWpUvvsjPQc8-Q youtube linux "YouTube: DorianDotSlash"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCkQX1tChV7Z7l1LFF4L9j_g youtube coding "YouTube: InfoQ"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCvtT19MZW8dq5Wwfu6B0oxw youtube dotnet coding "YouTube: dotnet"
+https://www.youtube.com/feeds/videos.xml?channel_id=UC-ptWR16ITQyYOglXyQmpzw youtube dotnet coding "YouTube: Tim Corey"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCC25ZltZWdfjwpTw7XXrybw youtube dotnet coding "YouTube: Dotnetos"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCw6BnEkURLprFGx_il2OyUw youtube dotnet coding "YouTube: LevelUp"
+
 https://www.youtube.com/feeds/videos.xml?channel_id=UCaGev0JRG7Dp5c_R4ROADLw youtube animation "YouTube: David Firth"
 https://www.youtube.com/feeds/videos.xml?channel_id=UC9Ntx-EF3LzKY1nQ5rTUP2g youtube animation "YouTube: Cyriak"
+
+https://www.youtube.com/feeds/videos.xml?channel_id=UCGc8ZVCsrR3dAuhvUbkbToQ youtube cityplanning interesting "YouTube: City Beautiful"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCAaQgfEkcQQ0vxM0dIZLnFg youtube interesting "YouTube: Architecture Foundation"
+
+https://www.youtube.com/feeds/videos.xml?channel_id=UCk1qvhkPMbF703QHR8qj8og youtube geography london "YouTube: John Rogers"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCFWqceEDVxifaU3ljzMH5tg youtube geography london "YouTube: Joolz Guides"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCxDZs_ltFFvn0FDHT6kmoXA youtube geography "YouTube: Bald and Bankrupt"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCW5OrUZ4SeUYkUg1XqcjFYA youtube geography "YouTube: Geowizard"
+
+https://www.youtube.com/feeds/videos.xml?channel_id=UCq6aw03lNILzV96UvEAASfQ youtube music comedy "YouTube: Bill Wurtz"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCWuVPXRGM6q81XRRDv9bB0A youtube music jazz "YouTube: Isto"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCEJoa9JCfgqSE3vShAQ1FCw youtube music jazz "YouTube: Vilray"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCdmjw5sm9Kn83TB_rA_QBCw youtube music musictheory jazz piano "YouTube: Kent Hewitt"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCdkkQvJoB0kGgYHCYwSkdww youtube music musictheory jazz "YouTube: Louie Zong"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCnkp4xDOwqqJD7sSM3xdUiQ youtube music musictheory "YouTube: Adam Neely"
+https://www.youtube.com/feeds/videos.xml?channel_id=UC4PIiYewI1YGyiZvgNlJNrA youtube music musictheory "YouTube: Charles Cornell"
+
+https://www.youtube.com/feeds/videos.xml?channel_id=UCajVmULQfRbhE55_9ftxDaw youtube music mixes "YouTube: Keeno"
+
+https://www.youtube.com/feeds/videos.xml?channel_id=UCfhSB16X9MXhzSFe_H7XbHg youtube linux "YouTube: Bryan Jenks"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCld68syR8Wi-GY_n4CaoJGA youtube linux "YouTube: Brodie Robertson"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCJYVW4HVrMWpUvvsjPQc8-Q youtube linux "YouTube: DorianDotSlash"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCkf4VIqu3Acnfzuk3kRIFwA youtube linux "YouTube: Gotbletu"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCW5OrUZ4SeUYkUg1XqcjFYA youtube "YouTube: Geowizard"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCZ4AMrDcNrfy3X6nsU8-rPg youtube interesting "YouTube: Economics Explained"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCC25ZltZWdfjwpTw7XXrybw youtube dotnet coding "YouTube: Dotnetos"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCvtT19MZW8dq5Wwfu6B0oxw youtube dotnet coding "YouTube: dotnet"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCdmjw5sm9Kn83TB_rA_QBCw youtube music "YouTube: Kent Hewitt"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCBbnbBWJtwsf0jLGUwX5Q3g youtube interesting "YouTube: Journey to the Microcosmos"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCk1qvhkPMbF703QHR8qj8og youtube vlog interesting "YouTube: John Rogers"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCFWqceEDVxifaU3ljzMH5tg youtube vlog interesting "YouTube: Joolz Guides"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCVIFCOJwv3emlVmBbPCZrvw youtube comedy "YouTube: Joel Haver"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCbbQalJ4OaC0oQ0AqRaOJ9g youtube interesting "YouTube: Jay Foreman"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCWuVPXRGM6q81XRRDv9bB0A youtube music "YouTube: Isto"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCkQX1tChV7Z7l1LFF4L9j_g youtube coding "YouTube: InfoQ"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCyWDmyZRjrGHeKF-ofFsT5Q youtube comedy "YouTube: Internet Comment Etiquette"
-https://www.youtube.com/feeds/videos.xml?channel_id=UC-ptWR16ITQyYOglXyQmpzw youtube dotnet coding "YouTube: Tim Corey"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCuCkxoKLYO_EQ2GeFtbM_bw youtube interesting "YouTube: Half as Interesting"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCdkkQvJoB0kGgYHCYwSkdww youtube music "YouTube: Louie Zong"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCsXVk37bltHxD1rDPwtNM8Q youtube interesting "YouTube: Kursgesagt"
-https://www.youtube.com/feeds/videos.xml?channel_id=UC7zsxKqd5MicTf4VhS9Y74g youtube comedy "YouTube: Kurtis Conner"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCVls1GmFKf6WlTraIb_IaJg youtube linux "YouTube: Distrotube"
 https://www.youtube.com/feeds/videos.xml?channel_id=UC7YOGHUfC1Tb6E4pudI9STA youtube linux "YouTube: Mental Outlaw"
 https://www.youtube.com/feeds/videos.xml?channel_id=UC2eYFnH61tmytImy1mTYvhA youtube linux "YouTube: Luke Smith"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCJkMlOu7faDgqh4PfzbpLdg youtube interesting "YouTube: Nerdwriter"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCq6VFHwMzcMXbuKyG7SQYIg youtube comedy "YouTube: Cr1TiKaL"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCmGcm7dhEjS9CIOsOOv8y6w youtube linux "YouTube: PizzaLovingNerd"
-https://www.youtube.com/feeds/videos.xml?channel_id=UC9RM-iSvTu1uPJb8X5yp3EQ youtube interesting "YouTube: Wendover Productions"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCEJoa9JCfgqSE3vShAQ1FCw youtube music "YouTube: Vilray"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCYVU6rModlGxvJbszCclGGw youtube linux "YouTube: Rob Braxman"
+
+https://www.youtube.com/feeds/videos.xml?channel_id=UCyWDmyZRjrGHeKF-ofFsT5Q youtube comedy "YouTube: Internet Comment Etiquette"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCVIFCOJwv3emlVmBbPCZrvw youtube comedy "YouTube: Joel Haver"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCtqxG9IrHFU_ID1khGvx9sA youtube comedy "YouTube: All Gas No Brakes"
+https://www.youtube.com/feeds/videos.xml?channel_id=UC7zsxKqd5MicTf4VhS9Y74g youtube comedy "YouTube: Kurtis Conner"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCq6VFHwMzcMXbuKyG7SQYIg youtube comedy "YouTube: Cr1TiKaL"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCsnVnnNneaz0E7aQPD_o0BQ youtube comedy "YouTube: Value Select"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCBa659QWEk1AI4Tg--mrJ2A youtube interesting "YouTube: Tom Scott"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCGg5QDOcFZYS3FbLVHRvJUw youtube news "YouTube: TLDR News US"
-https://www.youtube.com/feeds/videos.xml?channel_id=UC-eegKVWEgBCa4OzjnK_PtA youtube news "YouTube: TLDR News EU"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCSMqateX8OA2s1wsOR2EgJA youtube news "YouTube: TLDR News UK"
-https://www.youtube.com/feeds/videos.xml?channel_id=UC0p5jTq6Xx_DosDFxVXnWaQ youtube news "YouTube: The Economist"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCSju5G2aFaWMqn-_0YBtq5A youtube maths "YouTube: Stand up Maths
-https://www.youtube.com/feeds/videos.xml?channel_id=UCfzlCWGWYyIQ0aLC5w48gBQ youtube coding "YouTube: Sentdex"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCM-Imt636hk4nHrXKwxR7XA youtube comedy music "YouTube: Jazz Emu"
 https://www.youtube.com/feeds/videos.xml?channel_id=UC1DTYW241WD64ah5BFWn4JA youtube comedy history "YouTube: Sam O'Nella Academy"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCHyIvHeTyU2ALxwX4vm_Y4w youtube comedy "YouTube: Ryan the Leader"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCcoDpbA4c9HQY0AjKHSlKLg youtube music comedy "YouTube: Cer Spence"
+
+https://www.youtube.com/feeds/videos.xml?channel_id=UCJkMlOu7faDgqh4PfzbpLdg youtube interesting "YouTube: Nerdwriter"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCbbQalJ4OaC0oQ0AqRaOJ9g youtube interesting "YouTube: Jay Foreman"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCuCkxoKLYO_EQ2GeFtbM_bw youtube interesting "YouTube: Half as Interesting"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCsXVk37bltHxD1rDPwtNM8Q youtube interesting "YouTube: Kursgesagt"
+https://www.youtube.com/feeds/videos.xml?channel_id=UC9RM-iSvTu1uPJb8X5yp3EQ youtube interesting "YouTube: Wendover Productions"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCBa659QWEk1AI4Tg--mrJ2A youtube interesting "YouTube: Tom Scott"
+#TODO exurb1a
+
+https://www.youtube.com/feeds/videos.xml?channel_id=UCZ4AMrDcNrfy3X6nsU8-rPg youtube economics politics geopolotics "YouTube: Economics Explained"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCGg5QDOcFZYS3FbLVHRvJUw youtube politics news "YouTube: TLDR News US"
+https://www.youtube.com/feeds/videos.xml?channel_id=UC-eegKVWEgBCa4OzjnK_PtA youtube politics news "YouTube: TLDR News EU"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCSMqateX8OA2s1wsOR2EgJA youtube politics news "YouTube: TLDR News UK"
+https://www.youtube.com/feeds/videos.xml?channel_id=UC0p5jTq6Xx_DosDFxVXnWaQ youtube news "YouTube: The Economist"
+#TODO https://www.youtube.com/feeds/videos.xml?channel_id=UCi7egjf0JDHuhznWugXq4hA youtube politics geopolitics "Youtube: Caspian Report"
+#TODO https://www.youtube.com/feeds/videos.xml?channel_id=UCi7egjf0JDHuhznWugXq4hA youtube politics geopolitics "Youtube: VisualPolitik EN"
+#TODO https://www.youtube.com/feeds/videos.xml?channel_id=UCi7egjf0JDHuhznWugXq4hA youtube politics geopolitics "Youtube: NowThis World"
+#TODO https://www.youtube.com/feeds/videos.xml?channel_id=UCi7egjf0JDHuhznWugXq4hA youtube politics geopolitics history "Youtube: Geo History"
+
+https://www.youtube.com/feeds/videos.xml?channel_id=UCYO_jab_esuFRV4b17AJtAw youtube maths "YouTube: 3Blue1Brown" 
+https://www.youtube.com/feeds/videos.xml?channel_id=UCSju5G2aFaWMqn-_0YBtq5A youtube maths "YouTube: Stand up Maths
+https://www.youtube.com/feeds/videos.xml?channel_id=UCfzlCWGWYyIQ0aLC5w48gBQ youtube maths coding "YouTube: Sentdex"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCLB7AzTwc6VFZrBsO2ucBMg youtube interesting "YouTube: Robert Miles"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCYVU6rModlGxvJbszCclGGw youtube linux "YouTube: Rob Braxman"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCnkp4xDOwqqJD7sSM3xdUiQ youtube music "YouTube: Adam Neely"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCAaQgfEkcQQ0vxM0dIZLnFg youtube interesting "YouTube: Architecture Foundation"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCajVmULQfRbhE55_9ftxDaw youtube music "YouTube: Keeno"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCw6BnEkURLprFGx_il2OyUw youtube code dotnet "YouTube: LevelUp"
+
+https://www.youtube.com/feeds/videos.xml?channel_id=UCBbnbBWJtwsf0jLGUwX5Q3g youtube science relaxing "YouTube: Journey to the Microcosmos"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCo-3ThNQmPmQSQL_L6Lx1_w youtube science "YouTube: Deep Sky Videos"
+# TODO https://www.youtube.com/feeds/videos.xml?channel_id=UCo-3ThNQmPmQSQL_L6Lx1_w youtube science "YouTube: SciShow"
+
 https://www.youtube.com/feeds/videos.xml?channel_id=UCYUZ0gWRp_HQCVEz0OovuAg youtube crime "YouTube: Matt Orchard - Crime and Society"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCYwVxWpjeKFWwu8TML-Te9A youtube crime "YouTube: JCS - Criminal Psychology"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCM-Imt636hk4nHrXKwxR7XA youtube comedy music "YouTube: Jazz Emu"
+
 https://www.youtube.com/feeds/videos.xml?channel_id=UClgJyzwGs-GyaNxUHcLZrkg youtube crypto "Youtube: InvestAnswers"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCqK_GSMbpiV8spgD3ZGloSw youtube crypto "Youtube: Coin Bureau"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCi7egjf0JDHuhznWugXq4hA youtube crypto "Youtube: Bitcoin for Beginners"

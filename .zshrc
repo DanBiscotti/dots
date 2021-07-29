@@ -55,6 +55,7 @@ export BROWSER=w3m
 export BOOKMARK_DIR=/home/dan/.cache/bookmarks
 export PDFBOOKMARKFILE=/home/dan/.cache/pdf-bookmarks
 export XDG_CONFIG_HOME=/home/dan/.config
+export dmenu_path=/home/dan/.config/sway/launcher
 
 # Aliases/Functons
 alias vim=nvim
