@@ -22,5 +22,5 @@ require "paq" {
     "junegunn/fzf.vim";
 
     "rktjmp/lush.nvim";
-    "npxbr/gruvbox.nvim"
+    "npxbr/gruvbox.nvim";
 }
