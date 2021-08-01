@@ -1,3 +1,3 @@
 cmd = vim.cmd
 
-cmd('au BufWritePre *.cs :silent exec "!dotnet-csharpier %" | :e!') -- c# autoformat
+cmd('au BufWritePost *.cs :silent exec "!dotnet-csharpier %" | e!') -- c# autoformat
