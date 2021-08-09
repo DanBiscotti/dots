@@ -4,12 +4,12 @@ require "paq" {
     "neovim/nvim-lsp";
     "neovim/nvim-lspconfig";
     "hrsh7th/nvim-compe";
-
-    "tmsvg/pear-tree";
+    "hrsh7th/vim-vsnip";
+    "nvim-lua/plenary.nvim";
+    "nvim-lua/popup.nvim";
 
     "preservim/nerdtree";
 
-    "nvim-lua/plenary.nvim";
     "lewis6991/gitsigns.nvim";
     "tpope/vim-fugitive";
     "tpope/vim-rhubarb";

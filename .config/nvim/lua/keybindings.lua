@@ -48,8 +48,8 @@ map('n', '<BS>', ':<C-u>call append(line(".")-1, repeat([""], v:count1))<CR>', {
 map('v', '<C-j>', ':m \'>+1<CR>gv=gv', {noremap = true}) -- move lines up
 map('v', '<C-k>', ':m \'<-2<CR>gv=gv', {noremap = true}) -- move lines down
 
-map('i', '<C-j>', '<Up>', {noremap = true}) -- move up
-map('i', '<C-k>', '<Down>', {noremap = true}) -- move down
+map('i', '<C-j>', '<Down>', {noremap = true}) -- move up
+map('i', '<C-k>', '<Up>', {noremap = true}) -- move down
 map('i', '<C-h>', '<Left>', {noremap = true}) -- move left
 map('i', '<C-l>', '<Right>', {noremap = true}) -- move right
 

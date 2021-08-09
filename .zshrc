@@ -64,6 +64,7 @@ bk-add-pdf() { printf "Name: " && read unformatted && echo $unformatted | sed 's
 alias ls=lsd
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias la=ls -a
+alias cdc='cd ~/repos/$(ls ~/repos | fzf)'
 
 if type rg &> /dev/null; then
     export FZF_DEFAULT_COMMAND='rg --files'
