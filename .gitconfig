@@ -1,0 +1,11 @@
+[user]
+	email = danielscott886@gmail.com
+	name = Daniel Scott
+
+[alias]
+  us = reset HEAD --
+  ll = log --all --decorate --oneline --graph
+  st = status
+  sb = !git checkout $(git branch -a --color=always | fzf --ansi | cut -c 3- | rev | cut -f 1 -d '/' | rev)
+  cob = checkout -b
+  ppb = !git push -u origin $(git branch --show-current)
