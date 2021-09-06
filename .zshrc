@@ -73,16 +73,16 @@ fi
 
 
 
-export PATH="$PATH:/home/dan/.gem/ruby/2.7.0/bin:/home/dan/go/bin/:/home/dan/.dotnet/tools"
+export PATH="$PATH:/home/dan/.gem/ruby/2.7.0/bin:/home/dan/go/bin/:/home/dan/.dotnet/tools:/home/dan/.local/bin"
 
-source /home/dan/.config/broot/launcher/bash/br
-
-# TMUX
-if which tmux >/dev/null 2>&1; then
+if [ -z $DISPLAY ] && [ "$(tty)" = "/dev/tty1" ]; then
+    pw-jack a2jmidid -e &
+    rot8 &
+    #exec sway
+elif which tmux >/dev/null 2>&1; then
     if [[ -z  "$TMUX" ]]; then
-        xset -q &>/dev/null && tmux -2 || fbpad tmux -2
+        tmux -2
     fi
 fi
 
-source /home/dan/.config/zsh/zsh-z.plugin.zsh
 zstyle ':completion:*' menu select
