@@ -62,7 +62,7 @@ alias vim=nvim
 download-website() { wget --recursive --no-clobber --page-requisites --html-extension --convert-links --restrict-file-names=windows --domains $(echo $1 | awk -F/ '{print $3}') --no-parent $1 }
 bk-add-pdf() { printf "Name: " && read unformatted && echo $unformatted | sed 's/ /%20/g' | read formatted && echo "$(pwd)/$1" > $BOOKMARK_DIR/$formatted && echo "$(pwd)/$1 0" >> $PDFBOOKMARKFILE }
 alias ls=lsd
-alias dfi='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias dfi='/usr/bin/env git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias la=ls -a
 alias cdc='cd ~/repos/$(ls ~/repos | fzf)'
 
@@ -75,14 +75,11 @@ fi
 
 export PATH="$PATH:/home/dan/.gem/ruby/2.7.0/bin:/home/dan/go/bin/:/home/dan/.dotnet/tools:/home/dan/.local/bin"
 
-if [ -z $DISPLAY ] && [ "$(tty)" = "/dev/tty1" ]; then
-    pw-jack a2jmidid -e &
-    rot8 &
-    #exec sway
-elif which tmux >/dev/null 2>&1; then
+if which tmux >/dev/null 2>&1; then
     if [[ -z  "$TMUX" ]]; then
         tmux -2
     fi
 fi
 
 zstyle ':completion:*' menu select
+alias tb="nc termbin.com 9999"
